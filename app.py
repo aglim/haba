@@ -11,7 +11,3 @@ def hello_world():
 
     out = "<pre>{}</pre>".format("\n".join(s))
     return out
-
-
-if __name__ == '__main__':
-    app.run()
