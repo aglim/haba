@@ -3,10 +3,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    s = "Hello, Haba!" + "\n" + \
-        "Hello, Arsen!" + "\n" + \
-        "Hello, Karim!" + "\n"
-    return s
+
+    s = ["Hello, Haba!",
+        "Hello, Arsen!",
+        "Hello, Karim!"]
+
+    out = "<pre>{}</pre>".format("\n".join(s))
+    return out
 
 
 if __name__ == '__main__':
